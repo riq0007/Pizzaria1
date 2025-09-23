@@ -128,24 +128,6 @@ O sistema apresenta um menu principal com as seguintes opções:
 5. **Analise relatórios** de vendas
 6. **Configure promoções** para aumentar vendas
 
-## 📊 Funcionalidades Avançadas
-
-### Relatórios Inteligentes
-- Análise de vendas por período
-- Produtos mais vendidos
-- Categorias com melhor performance
-- Faturamento detalhado
-
-### Sistema de Promoções
-- Promoções automáticas baseadas em regras
-- Descontos progressivos
-- Frete grátis condicional
-- Promoções por categoria de produto
-
-### Gestão de Estoque
-- Controle automático de estoque
-- Alertas de produtos esgotados
-- Reposição inteligente
 
 ## 🔧 Execução
 
