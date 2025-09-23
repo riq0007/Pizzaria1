@@ -1,0 +1,35 @@
+{
+  "name": "sistema-pizzaria",
+  "version": "2.0.0",
+  "description": "Sistema completo de gerenciamento de pizzaria com cadastro de clientes, produtos, pedidos, relatórios e promoções",
+  "type": "module",
+  "main": "dist/src/SistemaPizzaria.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/SistemaPizzaria.js",
+    "dev": "tsc && node dist/src/SistemaPizzaria.js",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "pizzaria",
+    "sistema",
+    "typescript",
+    "nodejs",
+    "gestao",
+    "vendas"
+  ],
+  "author": "Sistema Pizzaria",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/readline-sync": "^1.4.8",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
