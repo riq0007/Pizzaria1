@@ -14,37 +14,37 @@ export class ComprovanteService {
 ║ 📋 INFORMAÇÕES DO PEDIDO                                     ║
 ║ ──────────────────────────────────────────────────────────── ║
 ║ ID do Pedido: ${pedido.id.toString().padStart(6, '0')}                                    ║
-║ Data/Hora: ${dataFormatada.padEnd(35)} ║
-║ Status: ${pedido.status.padEnd(40)} ║
+║ Data/Hora: ${dataFormatada.padEnd(35)}                       ║
+║ Status: ${pedido.status.padEnd(40)}                          ║
 ║                                                              ║
 ║ 👤 DADOS DO CLIENTE                                          ║
 ║ ──────────────────────────────────────────────────────────── ║
-║ Nome: ${pedido.cliente.nome.padEnd(45)} ║
-║ Email: ${pedido.cliente.email.padEnd(44)} ║
-║ Telefone: ${pedido.cliente.telefone.padEnd(40)} ║
+║ Nome: ${pedido.cliente.nome.padEnd(45)}                      ║
+║ Email: ${pedido.cliente.email.padEnd(44)}                    ║
+║ Telefone: ${pedido.cliente.telefone.padEnd(40)}              ║
 ║                                                              ║`;
 
         if (pedido.enderecoEntrega) {
             comprovante += `
-║ 📍 ENDEREÇO DE ENTREGA                                        ║
+║ 📍 ENDEREÇO DE ENTREGA                                       ║
 ║ ──────────────────────────────────────────────────────────── ║
 ║ ${pedido.enderecoEntrega.padEnd(58)} ║
 ║                                                              ║`;
         }
 
         comprovante += `
-║ 🛒 ITENS DO PEDIDO                                            ║
+║ 🛒 ITENS DO PEDIDO                                           ║
 ║ ──────────────────────────────────────────────────────────── ║`;
 
         pedido.itens.forEach((item, index) => {
             const linha = `${item.quantidade}x ${item.produto.nome}`;
             const preco = `R$ ${(item.precoUnitario * item.quantidade).toFixed(2)}`;
             comprovante += `
-║ ${linha.padEnd(35)} ${preco.padStart(15)} ║`;
+║ ${linha.padEnd(35)} ${preco.padStart(15)}                    ║`;
             
             if (item.observacoes) {
                 comprovante += `
-║   Obs: ${item.observacoes.padEnd(50)} ║`;
+║   Obs: ${item.observacoes.padEnd(50)}                        ║`;
             }
         });
 
@@ -58,7 +58,7 @@ export class ComprovanteService {
         );
 
         comprovante += `
-║ Subtotal: ${`R$ ${subtotal.toFixed(2)}`.padStart(50)} ║`;
+║ Subtotal: ${`R$ ${subtotal.toFixed(2)}`.padStart(50)}        ║`;
 
         if (pedido.taxaEntrega > 0) {
             comprovante += `

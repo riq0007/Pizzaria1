@@ -123,15 +123,15 @@ export class SistemaPizzaria {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
         console.log('║                    🍕 SISTEMA PIZZARIA 🍕                   ║');
-        console.log('║                    Menu Principal                           ║');
+        console.log('║                    Menu Principal                            ║');
         console.log('╠══════════════════════════════════════════════════════════════╣');
         console.log('║                                                              ║');
-        console.log('║ 1️⃣  👤 Gerenciar Clientes                                  ║');
-        console.log('║ 2️⃣  🍕 Gerenciar Produtos                                  ║');
-        console.log('║ 3️⃣  📋 Gerenciar Pedidos                                   ║');
-        console.log('║ 4️⃣  📊 Relatórios de Vendas                                ║');
-        console.log('║ 5️⃣  🎉 Promoções                                          ║');
-        console.log('║ 0️⃣  🚪 Sair                                               ║');
+        console.log('║ 1️⃣  👤 Gerenciar Clientes                                   ║');
+        console.log('║ 2️⃣  🍕 Gerenciar Produtos                                   ║');
+        console.log('║ 3️⃣  📋 Gerenciar Pedidos                                    ║');
+        console.log('║ 4️⃣  📊 Relatórios de Vendas                                 ║');
+        console.log('║ 5️⃣  🎉 Promoções                                            ║');
+        console.log('║ 0️⃣  🚪 Sair                                                 ║');
         console.log('║                                                              ║');
         console.log('╚══════════════════════════════════════════════════════════════╝');
     }
@@ -143,15 +143,15 @@ export class SistemaPizzaria {
             // Clear screen more reliably
             process.stdout.write('\x1B[2J\x1B[0f');
             console.log('╔══════════════════════════════════════════════════════════════╗');
-            console.log('║                    👤 GERENCIAR CLIENTES                    ║');
+            console.log('║                    👤 GERENCIAR CLIENTES                     ║');
             console.log('╠══════════════════════════════════════════════════════════════╣');
             console.log('║                                                              ║');
-            console.log('║ 1️⃣  ➕ Cadastrar Cliente                                  ║');
-            console.log('║ 2️⃣  📋 Listar Clientes                                    ║');
-            console.log('║ 3️⃣  🔍 Buscar Cliente                                    ║');
-            console.log('║ 4️⃣  ✏️  Atualizar Cliente                                 ║');
-            console.log('║ 5️⃣  🗑️  Excluir Cliente                                  ║');
-            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                          ║');
+            console.log('║ 1️⃣  ➕ Cadastrar Cliente                                    ║');
+            console.log('║ 2️⃣  📋 Listar Clientes                                      ║');
+            console.log('║ 3️⃣  🔍 Buscar Cliente                                       ║');
+            console.log('║ 4️⃣  ✏️  Atualizar Cliente                                   ║');
+            console.log('║ 5️⃣  🗑️  Excluir Cliente                                     ║');
+            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                            ║');
             console.log('║                                                              ║');
             console.log('╚══════════════════════════════════════════════════════════════╝');
             
@@ -231,7 +231,7 @@ export class SistemaPizzaria {
     private buscarCliente(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    🔍 BUSCAR CLIENTE                        ║');
+        console.log('║                    🔍 BUSCAR CLIENTE                         ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const id = readline.questionInt('Digite o ID do cliente: ');
@@ -255,7 +255,7 @@ export class SistemaPizzaria {
     private atualizarCliente(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    ✏️  ATUALIZAR CLIENTE                      ║');
+        console.log('║                    ✏️  ATUALIZAR CLIENTE                     ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const id = readline.questionInt('Digite o ID do cliente: ');
@@ -324,16 +324,16 @@ export class SistemaPizzaria {
         while (executando) {
             process.stdout.write('\x1B[2J\x1B[0f');
             console.log('╔══════════════════════════════════════════════════════════════╗');
-            console.log('║                    🍕 GERENCIAR PRODUTOS                   ║');
+            console.log('║                    🍕 GERENCIAR PRODUTOS                     ║');
             console.log('╠══════════════════════════════════════════════════════════════╣');
             console.log('║                                                              ║');
-            console.log('║ 1️⃣  ➕ Cadastrar Produto                                  ║');
-            console.log('║ 2️⃣  📋 Listar Produtos                                    ║');
-            console.log('║ 3️⃣  🔍 Buscar Produto                                    ║');
-            console.log('║ 4️⃣  ✏️  Atualizar Produto                                 ║');
-            console.log('║ 5️⃣  🗑️  Excluir Produto                                  ║');
-            console.log('║ 6️⃣  📊 Relatório de Estoque                              ║');
-            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                          ║');
+            console.log('║ 1️⃣  ➕ Cadastrar Produto                                    ║');
+            console.log('║ 2️⃣  📋 Listar Produtos                                      ║');
+            console.log('║ 3️⃣  🔍 Buscar Produto                                       ║');
+            console.log('║ 4️⃣  ✏️  Atualizar Produto                                   ║');
+            console.log('║ 5️⃣  🗑️  Excluir Produto                                     ║');
+            console.log('║ 6️⃣  📊 Relatório de Estoque                                 ║');
+            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                            ║');
             console.log('║                                                              ║');
             console.log('╚══════════════════════════════════════════════════════════════╝');
             
@@ -374,16 +374,16 @@ export class SistemaPizzaria {
         while (executando) {
             process.stdout.write('\x1B[2J\x1B[0f');
             console.log('╔══════════════════════════════════════════════════════════════╗');
-            console.log('║                    📋 GERENCIAR PEDIDOS                   ║');
+            console.log('║                    📋 GERENCIAR PEDIDOS                      ║');
             console.log('╠══════════════════════════════════════════════════════════════╣');
             console.log('║                                                              ║');
-            console.log('║ 1️⃣  ➕ Criar Novo Pedido                                 ║');
-            console.log('║ 2️⃣  📋 Listar Pedidos                                    ║');
-            console.log('║ 3️⃣  🔍 Buscar Pedido                                    ║');
-            console.log('║ 4️⃣  ✏️  Atualizar Status do Pedido                       ║');
-            console.log('║ 5️⃣  🧾 Gerar Comprovante                                ║');
-            console.log('║ 6️⃣  📊 Relatório de Pedidos                              ║');
-            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                          ║');
+            console.log('║ 1️⃣  ➕ Criar Novo Pedido                                    ║');
+            console.log('║ 2️⃣  📋 Listar Pedidos                                       ║');
+            console.log('║ 3️⃣  🔍 Buscar Pedido                                        ║');
+            console.log('║ 4️⃣  ✏️  Atualizar Status do Pedido                          ║');
+            console.log('║ 5️⃣  🧾 Gerar Comprovante                                    ║');
+            console.log('║ 6️⃣  📊 Relatório de Pedidos                                 ║');
+            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                            ║');
             console.log('║                                                              ║');
             console.log('╚══════════════════════════════════════════════════════════════╝');
             
@@ -424,16 +424,16 @@ export class SistemaPizzaria {
         while (executando) {
             process.stdout.write('\x1B[2J\x1B[0f');
             console.log('╔══════════════════════════════════════════════════════════════╗');
-            console.log('║                    📊 RELATÓRIOS DE VENDAS                 ║');
+            console.log('║                    📊 RELATÓRIOS DE VENDAS                   ║');
             console.log('╠══════════════════════════════════════════════════════════════╣');
             console.log('║                                                              ║');
-            console.log('║ 1️⃣  📅 Relatório Diário                                  ║');
-            console.log('║ 2️⃣  📆 Relatório Mensal                                  ║');
-            console.log('║ 3️⃣  🏆 Top Produtos Mais Vendidos                         ║');
-            console.log('║ 4️⃣  👥 Análise de Clientes                               ║');
-            console.log('║ 5️⃣  💰 Faturamento por Período                           ║');
-            console.log('║ 6️⃣  📈 Relatório de Estoque                              ║');
-            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                          ║');
+            console.log('║ 1️⃣  📅 Relatório Diário                                     ║');
+            console.log('║ 2️⃣  📆 Relatório Mensal                                     ║');
+            console.log('║ 3️⃣  🏆 Top Produtos Mais Vendidos                           ║');
+            console.log('║ 4️⃣  👥 Análise de Clientes                                  ║');
+            console.log('║ 5️⃣  💰 Faturamento por Período                              ║');
+            console.log('║ 6️⃣  📈 Relatório de Estoque                                 ║');
+            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                            ║');
             console.log('║                                                              ║');
             console.log('╚══════════════════════════════════════════════════════════════╝');
             
@@ -474,16 +474,16 @@ export class SistemaPizzaria {
         while (executando) {
             process.stdout.write('\x1B[2J\x1B[0f');
             console.log('╔══════════════════════════════════════════════════════════════╗');
-            console.log('║                    🎉 PROMOÇÕES                          ║');
+            console.log('║                    🎉 PROMOÇÕES                              ║');
             console.log('╠══════════════════════════════════════════════════════════════╣');
             console.log('║                                                              ║');
-            console.log('║ 1️⃣  ➕ Criar Nova Promoção                                ║');
-            console.log('║ 2️⃣  📋 Listar Promoções                                   ║');
-            console.log('║ 3️⃣  🔍 Buscar Promoção                                   ║');
-            console.log('║ 4️⃣  ✏️  Atualizar Promoção                               ║');
-            console.log('║ 5️⃣  🗑️  Excluir Promoção                                 ║');
-            console.log('║ 6️⃣  🎯 Aplicar Promoção a Pedido                         ║');
-            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                          ║');
+            console.log('║ 1️⃣  ➕ Criar Nova Promoção                                  ║');
+            console.log('║ 2️⃣  📋 Listar Promoções                                     ║');
+            console.log('║ 3️⃣  🔍 Buscar Promoção                                      ║');
+            console.log('║ 4️⃣  ✏️  Atualizar Promoção                                  ║');
+            console.log('║ 5️⃣  🗑️  Excluir Promoção                                    ║');
+            console.log('║ 6️⃣  🎯 Aplicar Promoção a Pedido                            ║');
+            console.log('║ 0️⃣  ⬅️  Voltar ao Menu Principal                            ║');
             console.log('║                                                              ║');
             console.log('╚══════════════════════════════════════════════════════════════╝');
             
@@ -522,7 +522,7 @@ export class SistemaPizzaria {
     private cadastrarProduto(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    ➕ CADASTRAR PRODUTO                     ║');
+        console.log('║                    ➕ CADASTRAR PRODUTO                      ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const nome = readline.question('Nome do produto: ');
@@ -580,7 +580,7 @@ export class SistemaPizzaria {
     private listarProdutos(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    📋 LISTAR PRODUTOS                       ║');
+        console.log('║                    📋 LISTAR PRODUTOS                        ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const produtos = this.gerenciadorProdutos.listarProdutos();
@@ -605,7 +605,7 @@ export class SistemaPizzaria {
     private buscarProduto(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    🔍 BUSCAR PRODUTO                        ║');
+        console.log('║                    🔍 BUSCAR PRODUTO                         ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const id = readline.questionInt('Digite o ID do produto: ');
@@ -703,7 +703,7 @@ export class SistemaPizzaria {
     private relatorioEstoque(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    📊 RELATÓRIO DE ESTOQUE                  ║');
+        console.log('║                    📊 RELATÓRIO DE ESTOQUE                   ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const produtos = this.gerenciadorProdutos.listarProdutos();
@@ -762,7 +762,7 @@ export class SistemaPizzaria {
     private criarPedido(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    ➕ CRIAR NOVO PEDIDO                     ║');
+        console.log('║                    ➕ CRIAR NOVO PEDIDO                      ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         // Selecionar cliente
@@ -917,7 +917,7 @@ export class SistemaPizzaria {
     private buscarPedido(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    🔍 BUSCAR PEDIDO                         ║');
+        console.log('║                    🔍 BUSCAR PEDIDO                          ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const id = readline.questionInt('Digite o ID do pedido: ');
@@ -954,7 +954,7 @@ export class SistemaPizzaria {
     private atualizarStatusPedido(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    ✏️  ATUALIZAR STATUS DO PEDIDO           ║');
+        console.log('║                    ✏️  ATUALIZAR STATUS DO PEDIDO            ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const id = readline.questionInt('Digite o ID do pedido: ');
@@ -1004,7 +1004,7 @@ export class SistemaPizzaria {
     private gerarComprovante(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    🧾 GERAR COMPROVANTE                    ║');
+        console.log('║                    🧾 GERAR COMPROVANTE                      ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const id = readline.questionInt('Digite o ID do pedido: ');
@@ -1023,7 +1023,7 @@ export class SistemaPizzaria {
     private relatorioPedidos(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    📊 RELATÓRIO DE PEDIDOS                 ║');
+        console.log('║                    📊 RELATÓRIO DE PEDIDOS                   ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const pedidos = this.gerenciadorPedidos.listarPedidos();
@@ -1096,7 +1096,7 @@ export class SistemaPizzaria {
     private relatorioDiario(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    📅 RELATÓRIO DIÁRIO                      ║');
+        console.log('║                    📅 RELATÓRIO DIÁRIO                       ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const hoje = new Date();
@@ -1128,7 +1128,7 @@ export class SistemaPizzaria {
     private relatorioMensal(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    📆 RELATÓRIO MENSAL                      ║');
+        console.log('║                    📆 RELATÓRIO MENSAL                       ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const agora = new Date();
@@ -1218,7 +1218,7 @@ export class SistemaPizzaria {
     private analiseClientes(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    👥 ANÁLISE DE CLIENTES                  ║');
+        console.log('║                    👥 ANÁLISE DE CLIENTES                    ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const clientes = this.gerenciadorClientes.listarClientes();
@@ -1283,7 +1283,7 @@ export class SistemaPizzaria {
     private faturamentoPeriodo(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    💰 FATURAMENTO POR PERÍODO              ║');
+        console.log('║                    💰 FATURAMENTO POR PERÍODO                ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const pedidos = this.gerenciadorPedidos.listarPedidos();
@@ -1326,7 +1326,7 @@ export class SistemaPizzaria {
     private relatorioEstoqueCompleto(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    📈 RELATÓRIO DE ESTOQUE COMPLETO      ║');
+        console.log('║                    📈 RELATÓRIO DE ESTOQUE COMPLETO          ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const produtos = this.gerenciadorProdutos.listarProdutos();
@@ -1385,7 +1385,7 @@ export class SistemaPizzaria {
     private criarPromocao(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    ➕ CRIAR NOVA PROMOÇÃO                   ║');
+        console.log('║                    ➕ CRIAR NOVA PROMOÇÃO                    ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const nome = readline.question('Nome da promoção: ');
@@ -1430,7 +1430,7 @@ export class SistemaPizzaria {
     private listarPromocoes(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    📋 LISTAR PROMOÇÕES                      ║');
+        console.log('║                    📋 LISTAR PROMOÇÕES                       ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const promocoes = this.promocaoService.listarPromocoes();
@@ -1454,7 +1454,7 @@ export class SistemaPizzaria {
     private buscarPromocao(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    🔍 BUSCAR PROMOÇÃO                      ║');
+        console.log('║                    🔍 BUSCAR PROMOÇÃO                        ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const id = readline.questionInt('Digite o ID da promoção: ');
@@ -1480,7 +1480,7 @@ export class SistemaPizzaria {
     private atualizarPromocao(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    ✏️  ATUALIZAR PROMOÇÃO                  ║');
+        console.log('║                    ✏️  ATUALIZAR PROMOÇÃO                    ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const id = readline.questionInt('Digite o ID da promoção: ');
@@ -1514,7 +1514,7 @@ export class SistemaPizzaria {
     private excluirPromocao(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    🗑️  EXCLUIR PROMOÇÃO                    ║');
+        console.log('║                    🗑️  EXCLUIR PROMOÇÃO                      ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const id = readline.questionInt('Digite o ID da promoção: ');
@@ -1544,7 +1544,7 @@ export class SistemaPizzaria {
     private aplicarPromocao(): void {
         process.stdout.write('\x1B[2J\x1B[0f');
         console.log('╔══════════════════════════════════════════════════════════════╗');
-        console.log('║                    🎯 APLICAR PROMOÇÃO                     ║');
+        console.log('║                    🎯 APLICAR PROMOÇÃO                       ║');
         console.log('╚══════════════════════════════════════════════════════════════╝\n');
         
         const promocoes = this.promocaoService.listarPromocoes().filter(p => p.ativa);

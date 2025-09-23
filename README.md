@@ -164,34 +164,10 @@ npm start
 3. Use `Ctrl+Shift+P` e execute "TypeScript: Build"
 4. Execute o arquivo `dist/SistemaPizzaria.js`
 
-## 📈 Melhorias Futuras
 
-- [ ] Interface gráfica (GUI)
-- [ ] Banco de dados persistente
-- [ ] API REST
-- [ ] Sistema de autenticação
-- [ ] Integração com delivery
-- [ ] App mobile
-- [ ] Dashboard web
 
-## 🤝 Contribuição
 
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
-## 📞 Suporte
-
-Para dúvidas ou suporte, entre em contato:
-- Email: suporte@sistemapizzaria.com
-- GitHub Issues: [Criar uma issue](https://github.com/seu-usuario/sistema-pizzaria/issues)
 
 ---
 
-**Desenvolvido com ❤️ para a gestão eficiente de pizzarias**
+
