@@ -1,5 +1,5 @@
-import type { Produto } from '../models/Produto';
-import type { Pedido } from '../models/Pedido';
+import type { Produto } from '../models/Produto.js';
+import type { Pedido } from '../models/Pedido.js';
 
 export enum TipoPromocao {
     DESCONTO_PERCENTUAL = 'Desconto Percentual',

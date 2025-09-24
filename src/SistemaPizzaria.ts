@@ -1,11 +1,11 @@
 import * as readline from 'readline-sync';
-import { GerenciadorClientes } from './models/Cliente';
-import { GerenciadorProdutos, CategoriaProduto, StatusProduto } from './models/Produto';
-import { GerenciadorPedidos, StatusPedido, FormaPagamento } from './models/Pedido';
-import type { ItemPedido } from './models/Pedido';
-import { RelatorioService } from './services/RelatorioService';
-import { ComprovanteService } from './services/ComprovanteService';
-import { PromocaoService } from './services/PromocaoService';
+import { GerenciadorClientes } from './models/Cliente.js';
+import { GerenciadorProdutos, CategoriaProduto, StatusProduto } from './models/Produto.js';
+import { GerenciadorPedidos, StatusPedido, FormaPagamento } from './models/Pedido.js';
+import type { ItemPedido } from './models/Pedido.js';
+import { RelatorioService } from './services/RelatorioService.js';
+import { ComprovanteService } from './services/ComprovanteService.js';
+import { PromocaoService } from './services/PromocaoService.js';
 
 export class SistemaPizzaria {
     private gerenciadorClientes: GerenciadorClientes;

@@ -1,4 +1,4 @@
-import type { Pedido } from '../models/Pedido';
+import type { Pedido } from '../models/Pedido.js';
 
 export class ComprovanteService {
     gerarComprovante(pedido: Pedido): string {

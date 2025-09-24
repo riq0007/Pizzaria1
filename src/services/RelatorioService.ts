@@ -1,6 +1,6 @@
-import type { Pedido } from '../models/Pedido';
-import { StatusPedido } from '../models/Pedido';
-import type { Produto, CategoriaProduto } from '../models/Produto';
+import type { Pedido } from '../models/Pedido.js';
+import { StatusPedido } from '../models/Pedido.js';
+import type { Produto, CategoriaProduto } from '../models/Produto.js';
 
 export interface RelatorioVendas {
     totalVendas: number;
