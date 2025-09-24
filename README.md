@@ -131,6 +131,24 @@ O sistema apresenta um menu principal com as seguintes opções:
 
 ## 🔧 Execução
 
+### Transpilação (TypeScript → JavaScript)
+```bash
+# Compilar o TypeScript para JavaScript
+npm run build
+
+# O comando acima transpila os arquivos .ts para .js na pasta dist/
+# Os arquivos JavaScript gerados ficam em: dist/src/
+```
+
+### Execução em JavaScript
+```bash
+# Executar a aplicação JavaScript transpilada
+npm start
+
+# Ou executar diretamente o arquivo JavaScript
+node dist/src/SistemaPizzaria.js
+```
+
 ### Via Terminal
 ```bash
 # Compilar e executar
