@@ -21,10 +21,12 @@
   "author": "Sistema Pizzaria",
   "license": "MIT",
   "dependencies": {
+    "pg": "^8.16.3",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
+    "@types/pg": "^8.15.6",
     "@types/readline-sync": "^1.4.8",
     "rimraf": "^5.0.0",
     "typescript": "^5.0.0"
