@@ -8,7 +8,8 @@
     "build": "tsc",
     "start": "node dist/src/SistemaPizzaria.js",
     "dev": "tsc && node dist/src/SistemaPizzaria.js",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "start:web": "node dist/src/server.js"
   },
   "keywords": [
     "pizzaria",
@@ -21,10 +22,14 @@
   "author": "Sistema Pizzaria",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "pg": "^8.16.3",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
     "@types/node": "^24.5.2",
     "@types/pg": "^8.15.6",
     "@types/readline-sync": "^1.4.8",

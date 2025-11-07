@@ -40,8 +40,11 @@ export class GerenciadorProdutos {
         return novoProduto;
     }
 
-    listarProdutos(): Produto[] {
-        return this.produtos.filter(produto => produto.status === StatusProduto.ATIVO);
+    listarProdutos(apenasAtivos: boolean = false): Produto[] {
+        if (apenasAtivos) {
+            return this.produtos.filter(produto => produto.status === StatusProduto.ATIVO);
+        }
+        return this.produtos;
     }
 
     listarProdutosPorCategoria(categoria: CategoriaProduto): Produto[] {

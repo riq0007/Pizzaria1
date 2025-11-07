@@ -14,7 +14,8 @@ ENV NODE_ENV=production
 COPY package*.json ./
 RUN npm ci --only=production --omit=optional
 COPY --from=builder /app/dist ./dist
+COPY public ./public
 
-CMD ["node", "dist/src/SistemaPizzaria.js"]
+CMD ["node", "dist/src/server.js"]
 
 
