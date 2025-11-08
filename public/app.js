@@ -606,9 +606,18 @@ async function savePedido(event) {
 
 async function updatePedidoStatus(id) {
   const statuses = ['Pendente', 'Confirmado', 'Em Preparo', 'Pronto para Entrega', 'Em Trânsito', 'Entregue', 'Cancelado'];
-  const status = prompt('Novo status:\n' + statuses.map((s, i) => `${i + 1}. ${s}`).join('\n'));
+  const statusInput = prompt('Novo status:\n' + statuses.map((s, i) => `${i + 1}. ${s}`).join('\n'));
   
-  if (!status) return;
+  if (!statusInput) return;
+  
+  // Converter número para o texto do enum
+  const statusIndex = parseInt(statusInput) - 1;
+  if (statusIndex < 0 || statusIndex >= statuses.length) {
+    alert('Status inválido!');
+    return;
+  }
+  
+  const status = statuses[statusIndex];
   
   try {
     const res = await fetch(`${API_BASE}/pedidos/${id}/status`, {
@@ -619,7 +628,7 @@ async function updatePedidoStatus(id) {
     
     if (res.ok) {
       loadPedidos();
-      alert('Status atualizado com sucesso!');
+      alert(`Status atualizado com sucesso! Novo status: ${status}`);
     } else {
       alert('Erro ao atualizar status');
     }

@@ -20,7 +20,7 @@ const gerenciadorProdutos = new GerenciadorProdutos();
 const gerenciadorPedidos = new GerenciadorPedidos();
 const promocaoService = new PromocaoService();
 const comprovanteService = new ComprovanteService();
-const relatorioService = new RelatorioService([], []);
+let relatorioService = new RelatorioService([], []);
 
 // Inicializar dados padrão
 function inicializarDados() {
@@ -64,7 +64,8 @@ inicializarDados();
 function atualizarRelatorioService() {
   const pedidos = gerenciadorPedidos.listarPedidos();
   const produtos = gerenciadorProdutos.listarProdutos();
-  Object.assign(relatorioService, new RelatorioService(pedidos, produtos));
+  // Recriar instância com dados atualizados
+  relatorioService = new RelatorioService(pedidos, produtos);
 }
 
 // ========== API CLIENTES ==========
@@ -205,8 +206,15 @@ app.put('/api/pedidos/:id/status', (req: Request, res: Response) => {
     return res.status(404).json({ message: 'Pedido não encontrado' });
   }
   
+  // Validar se o status recebido é válido
+  const statusRecebido = req.body.status as string;
+  const statusValidos = Object.values(StatusPedido);
+  if (!statusValidos.includes(statusRecebido as StatusPedido)) {
+    return res.status(400).json({ message: `Status inválido. Status válidos: ${statusValidos.join(', ')}` });
+  }
+  
   const statusAnterior = pedido.status;
-  const novoStatus = req.body.status as StatusPedido;
+  const novoStatus = statusRecebido as StatusPedido;
   const sucesso = gerenciadorPedidos.atualizarStatusPedido(id, novoStatus);
   
   if (sucesso) {
@@ -219,8 +227,9 @@ app.put('/api/pedidos/:id/status', (req: Request, res: Response) => {
       }
     }
     
+    // Atualizar relatório após mudança de status
     atualizarRelatorioService();
-    res.json({ message: 'Status atualizado com sucesso' });
+    res.json({ message: 'Status atualizado com sucesso', status: novoStatus });
   } else {
     res.status(404).json({ message: 'Pedido não encontrado' });
   }
